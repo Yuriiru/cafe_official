@@ -12,6 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace Cafe
 {
+    //ГЛАВНОЕ ОКНО ПРИЛОЖЕНИЯ
     enum RowState
     {
         Existed,
@@ -46,7 +47,7 @@ namespace Cafe
             dataGridView1.Columns[3].HeaderText = "Количество";
             dataGridView1.Columns[4].HeaderText = "Место хранения";
             dataGridView1.Columns[5].Visible = false;
-            //dataGridView1.Columns.Add("IsNew", String.Empty);
+            
         }
 
         private void ReadSingleRow(DataGridView dgw, IDataRecord record)
@@ -56,7 +57,7 @@ namespace Cafe
 
         private void RefreshDataGrid(DataGridView dgw)
         {
-            //dgw.Rows.Clear();
+           
 
             string queryString = $"SELECT * FROM product";
 
@@ -90,7 +91,7 @@ namespace Cafe
             }
             comboBox1.SelectedItem = comboBox1.Items[0];
             selectQuery();
-            //RefreshDataGrid(dataGridView1);
+            
         }
         private void AdminValidation()
         {
@@ -138,22 +139,21 @@ namespace Cafe
 
         private void button_redact_Click(object sender, EventArgs e)
         {
-            
-            //AddNewProduct f = new AddNewProduct();
-            //f.ShowDialog();
+            Change();
+            AddNewProduct f = new AddNewProduct();
+            f.ShowDialog();
         }
 
         private void Change()
         {
             var selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
-
-           // var id = 
+            
         }
        
         private void deleteRow()
         {
             int index = dataGridView1.CurrentCell.RowIndex;
-            //dataGridView1.CurrentCell = null;
+            
             dataGridView1.Rows[index].Visible = false;
                 
 
