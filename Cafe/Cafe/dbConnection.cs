@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Cafe
 {
+    //ПОДКЛЮЧЕНИЕ К БД
     internal class dbConnection
     {
         public static MySqlConnection connect = new MySqlConnection("server=127.0.0.1; port=3306; username=root; password=root; database=cafe");
