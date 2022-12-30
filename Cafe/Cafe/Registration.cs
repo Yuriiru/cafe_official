@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Cafe
 {
+    //РЕГИСТРАЦИЯ
     public partial class Registration : Form
     {
         public Registration()
