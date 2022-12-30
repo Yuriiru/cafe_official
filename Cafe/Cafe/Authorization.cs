@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Cafe
 {
+    //АВТОРИЗАЦИЯ
     public partial class Authorization : Form
     {
         public Authorization()
