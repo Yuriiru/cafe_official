@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Cafe
 {
+    //ДОБАВЛЕНИЕ НОВОГО ПРОДУКТА
     public partial class AddNewProduct : Form
     {
         public AddNewProduct()
